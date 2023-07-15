@@ -20,7 +20,7 @@ function Widget({type}) {
         title: "USERS",
         isMoney:false,
         link: "See all users",
-        icon: <Person2OutlinedIcon/>
+        icon: <Person2OutlinedIcon className='icon' style={{backgroundColor: "#F07A7A"}}/>
       };
       break
     case "order":
@@ -28,7 +28,7 @@ function Widget({type}) {
         title: "ORDERS",
         isMoney:false,
         link: "View net earnings",
-        icon: <ShoppingCartOutlinedIcon/>
+        icon: <ShoppingCartOutlinedIcon className='icon' style={{backgroundColor: "#F0D97A"}}/>
       };
       break
     case "earning":
@@ -36,7 +36,7 @@ function Widget({type}) {
         title: "EARNINGS",
         isMoney:false,
         link: "See all users",
-        icon: <MonetizationOnOutlinedIcon/>
+        icon: <MonetizationOnOutlinedIcon className='icon' style={{backgroundColor: "#65F682"}}/>
       };
       break
     case "balance":
@@ -44,7 +44,7 @@ function Widget({type}) {
       title: "BALANCE",
       isMoney:false,
       link: "See details",
-      icon: <AccountBalanceWalletOutlinedIcon/>
+      icon: <AccountBalanceWalletOutlinedIcon className='icon' style={{backgroundColor: "#F165F6"}}/>
     };
     break
     default:
@@ -63,7 +63,7 @@ function Widget({type}) {
                 <ArrowDropUpOutlinedIcon/>
                 {diff}%
             </div>
-            <Person2OutlinedIcon className='icon'/>
+            {data.icon}
         </div>
     </div>
   )
